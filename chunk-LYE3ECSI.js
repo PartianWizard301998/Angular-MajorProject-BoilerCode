@@ -1,0 +1,1 @@
+import{Db as r,Hb as a,ja as o,nb as n,ob as i}from"./chunk-NXHE66ZE.js";var s=(()=>{class e{static{this.\u0275fac=function(t){return new(t||e)}}static{this.\u0275cmp=o({type:e,selectors:[["app-profile"]],standalone:!0,features:[a],decls:2,vars:0,template:function(t,f){t&1&&(n(0,"p"),r(1,"profile works!"),i())}})}}return e})();export{s as default};

@@ -1,0 +1,1 @@
+import{_ as e,a as r}from"./chunk-NXHE66ZE.js";var a=(()=>{class t{constructor(){this.toasts=[]}show(o,s={}){this.toasts.push(r({message:o},s))}remove(o){this.toasts=this.toasts.filter(s=>s!==o)}clear(){this.toasts=[]}static{this.\u0275fac=function(s){return new(s||t)}}static{this.\u0275prov=e({token:t,factory:t.\u0275fac,providedIn:"root"})}}return t})();export{a};
