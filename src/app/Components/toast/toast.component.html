@@ -1,0 +1,26 @@
+
+<ngb-toast
+*ngFor="let toast of toastService.toasts"
+[autohide]="toast.autohide"
+[delay]="toast.delay || 5000"
+class="text-white"
+(hide)="toastService.remove(toast)"
+[class.bg-success]="toast.type === 'success'"
+[class.bg-danger]="toast.type === 'error'"
+[class.bg-warning]="toast.type === 'warning'"
+[class.bg-info]="toast.type === 'info'">
+
+
+<div class="d-flex justify-content-between align-items-center custom-toast">
+  <div>
+    {{ toast.message }}
+  </div>
+  <ng-template [ngIf]="toast.showClose">
+    <button 
+      type="button" 
+      class="btn-close btn-close-white ms-auto" 
+      aria-label="Close" 
+      (click)="toastService.remove(toast)">
+    </button>
+  </ng-template>
+</div>
